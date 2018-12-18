@@ -5,8 +5,8 @@ data <- read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/abal
 summary(data)
 colnames(data)
 colnames(data) <- c("sex", "length", "diameter", "height", 
-                "whole_weight", "shucked_weight",
-                "viscera_weight", "shell_weight", "rings")
+                    "whole_weight", "shucked_weight",
+                    "viscera_weight", "shell_weight", "rings")
 
 colnames(data)
 data$sex <- factor(c("Female", "Infant", "Male")[data$sex])
